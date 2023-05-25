@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charse="UTE-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEB</title>
+	<link rel="stylesheet" href="index1.css">
+	<link rel="stylesheet" media= "screen and (max-width:800px)" 
+	href="index2.css">
+	<link rel="stylesheet" media= "screen and (max-width:545px)" 
+	href="index3.css">
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+     <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script >
+    	Email.send({
+    		Host : "smtp.gmail.com",
+    		Username : "muqadasarshad2020@gmail.com",
+    		Password : "bsit2020",
+    		To : 'iqraarshad2016@gmail.com',
+    		From : document.getElementById("email").value,
+    		Subject : "New contact from Enquiry",
+    		Body :  "Name: " + document.getElementById("name").value
+    				   + "<br> Email: " + document.getElementById("email").value
+    				    + "<br> Phone no: " + document.getElementById("phone").value
+    				     + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully!")
+);
+    	
+    </script>
+	
+</head>
+</head>
+<body>
+	<nav class="navbar">
+	<ul>
+		<li><a href="#home">HOME</a></li>
+		<li><a href="#about">ABOUT ME</a></li>
+		<li><a href="#portfolio">PORTFOLIO</a></li>
+		<li><a href="#services">SERVICES</a></li>
+		<li><a href="#contact">CONTACT ME</a></li>
+	</ul>
+	</nav>
+
+	<section id="home">
+		<div class="main">
+			<h4>Hi, There!</h4>
+			<h1 class= "headings1"> I Am <span>Iqra Arshad</span><br><h1>
+			<p>Design is a solution to a problem. Art is a question to a problem.</p>
+			<button class="btn">
+				Hire Me
+			</button>
+		</div>
+	</section>
+	<section id="about">
+		
+			<h1 class ="headings">  ABOUT ME</h1>
+			<div id="pic">
+				<img src="pic1.jpg" alt="">
+				<div id="intro">
+				<h2>IQRA ARSHAD</h2>
+				<p>I am a Graphic Designer.Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.<br>“Design is a solution to a problem. Art is a question to a problem.”<br>
+
+				— John Maeda, President of Rhode Island School of Design</p>
+
+ 				</div>
+			
+		</div>
+	</section>
+	<section id="portfolio">
+		<h1 class ="heading">PORTFOLIO</h1>
+		<div class="gallery">
+			<img src="photo2-01.jpg" alt="">
+			<img src="pic3.png" alt="">
+			<img src="pic4.jpg" alt="">
+			<img src="pic5.png" alt="">
+			<img src="pic6.png" alt="">
+			<img src="pic7.jpg" alt="">
+		</div>
+	</section>	
+	<section id="services">
+		<h1 class ="headings">SERVICES</h1>
+		<div class="row">
+			<div class ="box">
+				
+				<h5 class="headings" > POSTER DESIGNS </h5>
+				<p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
+
+
+			</div>
+			<div class ="box">
+			
+				<h5 class="headings">  CV WRITTING </h5>
+				<p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
+
+
+			</div>
+			<div class ="box">
+				
+				<h5 class="headings"> WEDDING CARDS </h5>
+				<p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
+
+
+			</div>
+		</div>
+    </section>
+	<section id="contact">
+		<h1 class="heading"> CONTACT </h1>
+		<form onsubmit = "sendEmail(); reset(); return false;" action=" " class="form">
+			<input type="text" name="name" class="input" placeholder="Enter Your Name">
+			<input type="email" name="email" class="input" placeholder="Enter Your Email">
+			<input type="phnno" name="number" class="input" placeholder="Enter Your Phone no.">
+			<textarea name="msg" id= "msg" cols="30" rows="10" placeholder="How can i help you?"></textarea>
+			<input type="submit" value="SEND" id="send">
+		</form>
+		
+	</section>
+
+	<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3 >Graphic<span>Designer</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Portfolio</a>
+                |
+                <a href="#">Services</a>
+                |
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2023 <strong>Iqra Arshad</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Lahore</span>
+                    Pakistan</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+92 123456678</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">iqraarshad2020@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the Website</span>
+                <strong>Iqra Arshad</strong> is a Graphic Designer and you can get my services about these skills. 
+                
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+   
+	
+</body>
+</html>
